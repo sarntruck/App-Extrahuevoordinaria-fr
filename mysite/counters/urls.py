@@ -2,5 +2,5 @@ from django.urls import include, path
 from . import views
 
 urlpatterns = [
-    path('',views.homepage),
+    path('',views.counters_list.html),
 ]
