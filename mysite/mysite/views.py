@@ -4,3 +4,5 @@ def homepage(request):
     return render(request, 'home.html')
 def about(request):
     return render(request, 'about.html')
+def game(request):
+    return render(request, "juego.html")
