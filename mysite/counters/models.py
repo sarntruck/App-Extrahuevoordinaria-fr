@@ -1,6 +1,6 @@
 from django.db import models
 
 # Create your models here.
-class Counter(models):
+class Counter(models.Model):
     nombre = models.CharField(max_length=70)
-    contador = models.IntegerField()
+    
