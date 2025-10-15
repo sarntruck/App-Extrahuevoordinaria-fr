@@ -8,7 +8,11 @@
 <body>
     <h1>Bienvenido</h1>
     <hr>
-    <h3>Contando...</h3>
+    <h3>Llevas: {{contador.value}}</h3>
+    <form method="post" action="{% url 'counters/views.py' %}">
+        {% csrf_token %}
+        <button type='submit'>Incremento</button>
+    </form>
     <br>
     <h4>a</h4>
 </body>

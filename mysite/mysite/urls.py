@@ -23,4 +23,5 @@ urlpatterns = [
     path('',views.homepage),
     path('about/', views.about),
     path('game/', views.game),
+    path('counters/',include('counters.urls')),
 ]
